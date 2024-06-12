@@ -1,4 +1,4 @@
-import { ChromeGetMyAttendanceInformationResponse, WagoraGetMyAttendanceInformationResponse } from "libs/api";
+import { ChromeGetMyAttendanceInformationResponse, WagoraGetMyAttendanceInformationResponse } from "@libs/api";
 
 chrome.runtime.onMessage.addListener(
     function (request, _sender, sendResponse: (response?: ChromeGetMyAttendanceInformationResponse) => void) {

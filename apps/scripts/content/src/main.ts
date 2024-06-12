@@ -1,4 +1,4 @@
-import { ChromeGetMyAttendanceInformationResponse } from "libs/api";
+import { ChromeGetMyAttendanceInformationResponse } from "@libs/api";
 
 const BUSINESS_REPORT_DOM_SELECTOR = 'gxp-growthus-business-report';
 const LOADING_TEXT = '読込中';

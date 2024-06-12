@@ -27,7 +27,7 @@
     "noUnusedParameters": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "libs/api": ["libs/api/src/index.ts"]
+      "@libs/*": ["libs/*/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
