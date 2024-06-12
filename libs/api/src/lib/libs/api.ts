@@ -1,9 +1,9 @@
 /**
  * タブ間通信のレスポンスのベース
  */
-type InterTabCommunicationResponse<TResponse> = {
+type InterTabCommunicationResponse<T> = {
   status: 'success',
-  data: TResponse,
+  data: T,
 } | {
   status: 'error',
   cause: any,
@@ -12,12 +12,12 @@ type InterTabCommunicationResponse<TResponse> = {
 /**
  * GraphQLのレスポンスのベース
  */
-type GraphQLResponse<TResponse> = (
+type GraphQLResponse<T> = (
   {
     data: null,
     errors: Array<any>,
   } | {
-    data: TResponse,
+    data: T,
     errors?: undefined,
   }
 );
